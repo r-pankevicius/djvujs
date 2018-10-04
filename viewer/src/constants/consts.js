@@ -26,6 +26,8 @@ const Consts = {
     CLOSE_HELP_WINDOW_ACTION: null,
     CLOSE_DOCUMENT_ACTION: null,
     SET_PAGE_ROTATION_ACTION: null,
+    PAGE_IS_LOADED_ACTION: null,
+    PAGES_SIZES_ARE_GOTTEN: null,
 
     SET_API_CALLBACK_ACTION: null, // A special action for interaction with sagas. Used for program API of the viewer, look at the DjVuViewer.js
 };

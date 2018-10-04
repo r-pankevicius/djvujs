@@ -4,6 +4,39 @@
  * Скрипт для тестирования библиотеки непосредственно в синхронном режиме
  */
 
+function convertToDataUrl(page) {
+    // const PNG = DjVu.PNG;
+    // var image = new PNG({
+    //     width: imageData.width,
+    //     height: imageData.height,
+    //     colorType: 2
+    // });
+    // console.log(image, image.data);
+    // var canvas2 = document.querySelector('#canvas2');
+    // var ctx = canvas2.getContext('2d');
+    // ctx.fillStyle = 'green';
+    // ctx.fillRect(20, 10, 100, 100);
+    // //var imageData = ctx.getImageData(0, 0, canvas2.width, canvas2.height);
+
+    // // image.data = imageData.data;
+    // console.time('PNG')
+    // var res = PNG.sync.write(imageData);
+    // console.timeEnd('PNG')
+    // console.log(res.length);
+    // console.time('URL')
+    // var url = URL.createObjectURL(new Blob([res.buffer]));
+    // console.timeEnd('URL')
+    // console.log(url);
+
+    var img = document.createElement('img');
+    var url = page.createPngObjectUrl();
+    console.log(url);
+    img.src = url.url;
+    img.style.border = "1px solid black";
+    document.body.appendChild(img);
+
+};
+
 DjVu.setDebugMode(true);
 
 var fileSize = 0;
@@ -144,6 +177,7 @@ function redrawPage() {
     var time = performance.now();
     var page = djvuDocument.getPage(pageNumber);
     console.log(page._getImageData());
+    convertToDataUrl(page);
     Globals.drawImage(
         page.getImageData(),
         page.getDpi() * 1

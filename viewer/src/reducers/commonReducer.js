@@ -13,10 +13,30 @@ const initialState = Object.freeze({
     contents: null,
     errorMessage: null,
     isHelpWindowShown: false,
+    continuousMode: true,
+    pagesList: [],
 });
 
 export default (state = initialState, action) => {
     switch (action.type) {
+
+        case Consts.PAGES_SIZES_ARE_GOTTEN:
+            // const pagesRegistry = action.sizes.reduce((registry, size, i) => {
+            //     registry[i] = size;
+            //     return registry;
+            // }, {});
+            return {
+                ...state,
+                pagesList: action.sizes,
+            };
+
+        case Consts.PAGE_IS_LOADED_ACTION:
+            const newPagesList = [...state.pagesList];
+            newPagesList[action.pageNumber - 1] = action.pageData;
+            return {
+                ...state,
+                pagesList: newPagesList
+            };
 
         case Consts.SET_PAGE_ROTATION_ACTION:
             return {

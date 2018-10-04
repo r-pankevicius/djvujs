@@ -13,17 +13,24 @@ import Consts from '../constants/consts';
 class ComplexImage extends React.Component {
 
     static propTypes = {
-        imageData: PropTypes.object.isRequired,
+        imageData: PropTypes.object,
+        imageUrl: PropTypes.string,
         imageDpi: PropTypes.number,
+        imageWidth: PropTypes.number,
+        imageHeight: PropTypes.number,
         userScale: PropTypes.number,
         textZones: PropTypes.array,
         rotation: PropTypes.oneOf([0, 90, 180, 270])
     };
 
     render() {
+        const initialWidth = this.props.imageWidth || this.props.imageData.width;
+        const initialHeight = this.props.imageHeight || this.props.imageData.height;
+
         const scaleFactor = Consts.DEFAULT_DPI / this.props.imageDpi * this.props.userScale;
-        let width = Math.floor(this.props.imageData.width * scaleFactor);
-        let height = Math.floor(this.props.imageData.height * scaleFactor);
+        let width, height;
+        let scaledWidth = width = Math.floor(initialWidth * scaleFactor);
+        let scaledHeight = height = Math.floor(initialHeight * scaleFactor);
         if (this.props.rotation === 90 || this.props.rotation === 270) {
             [width, height] = [height, width];
         }
@@ -42,10 +49,20 @@ class ComplexImage extends React.Component {
                     width: width + "px",
                     height: height + "px"
                 }}
-                ref={this.props.outerRef}
             >
-                <div className={cx(contentClasses)}>
-                    <CanvasImage {...this.props} />
+                <div className={cx(contentClasses)} >
+                    {this.props.imageData ?
+                        <CanvasImage {...this.props} /> :
+                        this.props.imageUrl ?
+                            <img
+                                src={this.props.imageUrl}
+                                style={{
+                                    width: scaledWidth + "px",
+                                    height: scaledHeight + "px"
+                                }}
+                                alt="djvu_page"
+                            /> : null
+                    }
                     {this.props.textZones ? <TextLayer
                         textZones={this.props.textZones}
                         imageHeight={this.props.imageData.height}

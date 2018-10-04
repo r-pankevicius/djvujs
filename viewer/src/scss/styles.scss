@@ -29,6 +29,16 @@ body.disable_scroll_djvujs {
     @import "footer";
     @import "rotation_control";
 
+    @import "complex_image";
+
+    .grab {
+        cursor: grab;
+    }
+
+    .grabbing {
+        cursor: grabbing;
+    }
+
     &.full_page_view {
         top: 0;
         left: 0;

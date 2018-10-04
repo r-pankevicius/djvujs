@@ -12,6 +12,7 @@ import Footer from './Footer';
 import LeftPanel from './LeftPanel';
 import NotificationWindow from './NotificationWindow';
 import HelpWindow from './HelpWindow';
+import ContinuousImageBlock from './ContinuousImageBlock';
 
 const TextBlock = ({ text }) => (
     <pre className="text_block">
@@ -36,7 +37,8 @@ class App extends Component {
                     !this.props.isFileLoaded ? <InitialScreen /> : [
                         <div key="central_block" className="central_block">
                             <LeftPanel />
-                            {this.props.isTextMode ? <TextBlock text={this.props.pageText} /> : <ImageBlock />}
+                            {this.props.continuousMode ? <ContinuousImageBlock /> :
+                                this.props.isTextMode ? <TextBlock text={this.props.pageText} /> : <ImageBlock />}
                         </div>,
                         <DownPanel key="down_panel" />
                     ]
@@ -58,6 +60,7 @@ export default connect(
         isTextMode: get.isTextMode(state),
         pageText: get.pageText(state),
         errorHeader: get.errorHeader(state),
-        errorMessage: get.errorMessage(state)
+        errorMessage: get.errorMessage(state),
+        continuousMode: get.continuousMode(state),
     })
 )(App);

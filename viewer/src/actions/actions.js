@@ -4,6 +4,17 @@ import DjVu from '../DjVu';
 
 const Actions = {
 
+    pagesSizesAreGottenAction: (pagesSizes) => ({
+        type: Consts.PAGES_SIZES_ARE_GOTTEN,
+        sizes: pagesSizes,
+    }),
+
+    pageIsLoadedAction: (pageData, pageNumber) => ({
+        type: Consts.PAGE_IS_LOADED_ACTION,
+        pageNumber: pageNumber,
+        pageData: pageData,
+    }),
+
     setApiCallbackAction: (callbackName, callback) => ({
         type: Consts.SET_API_CALLBACK_ACTION,
         callbackName: callbackName,

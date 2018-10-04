@@ -7,6 +7,7 @@ import DjVuText from './chunks/DjVuText';
 import { ZPDecoder } from './ZPCodec';
 import DjVu from './DjVu';
 import { CorruptedFileDjVuError } from './DjVuErrors';
+import png from 'pngjs/browser.js';
 
 /**
  * Страница документа
@@ -60,15 +61,32 @@ export default class DjVuPage extends CompositeChunk {
         //this.init();
     }
 
+    getHeight() {
+        return this.info ? this.info.height : this.init().info.height;
+    }
+
+    getWidth() {
+        return this.info ? this.info.width : this.init().info.width;
+    }
+
     /**
      * Свойство необходимое для корректного отображения страницы - влияет на 100% масштаб.
      */
     getDpi() {
-        if (this.info) {
-            return this.info.dpi;
-        } else {
-            return this.init().info.dpi;
-        }
+        return this.info ? this.info.dpi : this.init().info.dpi;
+    }
+
+    createPngObjectUrl() {
+        var time = performance.now();
+        var image = png.PNG.sync.write(this.getImageData());
+        DjVu.IS_DEBUG && console.log("Png creation time = ", performance.now() - time);
+        return {
+            url: URL.createObjectURL(new Blob([image.buffer])),
+            byteLength: image.buffer.byteLength,
+            width: this.getWidth(),
+            height: this.getHeight(),
+            dpi: this.getDpi(),
+        };
     }
 
     // метод поиска зависимостей, то есть INCLChunk
