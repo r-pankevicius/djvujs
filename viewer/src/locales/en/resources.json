@@ -30,5 +30,20 @@
     "chromeExtensionFmt" : "The Google Chrome's version of the extension allows to open local files by a browser directly (via a double-click). But you have to enable the %(allowAccessToFileUrls)s option on the extension's options page. Otherwise, the feature won't work.",
     "Allow access to file URLs": "Allow access to file URLs",
     "clickHelpButtonFmt" : "Click the %(helpButton)s button to learn more about the application."
+  },
+  "helpScreen" : {
+    "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s powered by DjVu.js v. %(djvuLibraryVersion)s)",
+    "appDescription" : "The application for viewing .djvu files in the browser.",
+    "fellFreeWriteToAuthorAboutProblemFmt" : "If something isn't working properly feel free to write about the problem to %(mailToAuthorLink)s.",
+    "officialWebSiteFmt" : "The official website is %(officialWebSiteLink)s.",
+    "sourceCodeAvailableOnFmt" : "The source code is available on %(githubLink)s.",
+    "Keyboard Shortcuts" : "Keyboard Shortcuts",
+    "Left Arrow" : "Left Arrow",
+    "go to the previous page" : "go to the previous page",
+    "Right Arrow" : "Right Arrow",
+    "go to the next page" : "go to the next page",
+    "Controls" : "Controls",
+    "fullPageModeFmt" : "Buttons %(expandIcon)s and %(compressIcon)s are used to switch the viewer to full page mode and back.",
+    "fullPageHasNoEffectInBrowserExtension" : "If you are using the browser extension these buttons will cause no effect since the viewer takes the whole page by default."
   }
 }

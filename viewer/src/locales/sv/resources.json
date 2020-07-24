@@ -30,6 +30,21 @@
     "chromeExtensionFmt" : "TODO SV The Google Chrome's version of the extension allows to open local files by a browser directly (via a double-click). But you have to enable the %(allowAccessToFileUrls)s option on the extension's options page. Otherwise, the feature won't work.",
     "Allow access to file URLs": "TODO SV Allow access to file URLs",
     "clickHelpButtonFmt" : "TODO SV Click the %(helpButton)s button to learn more about the application."
+  },
+  "helpScreen" : {
+    "productInfoFmt" : "TODO SV DjVu.js Viewer v. %(viewerVersion)s powered by DjVu.js v. %(djvuLibraryVersion)s)",
+    "appDescription" : "TODO SV The application for viewing .djvu files in the browser.",
+    "fellFreeWriteToAuthorAboutProblemFmt" : "TODO SV If something isn't working properly feel free to write about the problem to %(mailToAuthorLink)s.",
+    "officialWebSiteFmt" : "TODO SV The official website is %(officialWebSiteLink)s.",
+    "sourceCodeAvailableOnFmt" : "TODO SV The source code is available on %(githubLink)s.",
+    "Keyboard Shortcuts" : "TODO SV Keyboard Shortcuts",
+    "Left Arrow" : "TODO SV Left Arrow",
+    "go to the previous page" : "TODO SV go to the previous page",
+    "Right Arrow" : "TODO SV Right Arrow",
+    "go to the next page" : "TODO SV go to the next page",
+    "Controls" : "TODO SV Controls",
+    "fullPageModeFmt" : "TODO SV Buttons %(expandIcon)s and %(compressIcon)s are used to switch the viewer to full page mode and back.",
+    "fullPageHasNoEffectInBrowserExtension" : "TODO SV If you are using the browser extension these buttons will cause no effect since the viewer takes the whole page by default."
   }
 }
 
