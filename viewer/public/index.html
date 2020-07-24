@@ -40,10 +40,14 @@
     <script id="djvu_js_lib" src="%PUBLIC_URL%/tmp/djvu.js"></script>
     <script>
         window.onload = function () {
-            window.viewer = window.DjVuViewerInstance = new window.DjVu.Viewer({
+            window.viewer = window.DjVuViewerInstance = new window.DjVu.Viewer(
+            /*
+                // You can pass options to viewer constructor to customize it.
+                {
                 i18nextOptions : {
                     lang: 'sv'
-                }}
+                }
+            }*/
             );
             window.DjVuViewerInstance.render(document.getElementById('root'));
 
