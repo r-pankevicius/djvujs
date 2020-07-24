@@ -1,0 +1,22 @@
+{
+  "translation": {
+    "Loading..." : "TODO SV Loading...",
+    "Ready" : "TODO SV Ready",
+    "Contents" : "TODO SV Contents",
+    "No contents provided" : "TODO SV No contents provided",
+    "Save" : "TODO SV Save",
+    "Save document" : "TODO SV Save document",
+    "Close document" : "TODO SV Close document",
+    "Continuous scroll view mode" : "TODO SV Continuous scroll view mode",
+    "Single page view mode" : "TODO SV Single page view mode",
+    "Text view mode" : "TODO SV Text view mode",
+    "Text cursor mode" : "TODO SV Text cursor mode",
+    "Grab cursor mode" : "TODO SV Grab cursor mode",
+    "clickOnPageHint" : "TODO SV You can click on the page number to enter it manually",
+    "scaleWithMouseHint" : "TODO SV You also can scale page using Ctrl + MouseWheel",
+    "Rotate the page" : "TODO SV Rotate the page",
+    "Open another .djvu file" : "TODO SV Open another .djvu file",
+    "Show help window" : "TODO SV Show help window",
+    "Switch full page mode": "TODO SV Switch full page mode"
+  }
+}

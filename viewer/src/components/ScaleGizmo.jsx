@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import Actions from '../actions/actions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
@@ -55,10 +56,10 @@ class ScaleGizmo extends React.Component {
 
     render() {
         const currentValue = Math.round(this.props.scale * 100);
-        return (
+        return <Translation>{ t => (
             <div
                 className="scale_gizmo"
-                title="You also can scale the image via Ctrl+MouseWheel"
+                title={t('scaleWithMouseHint')}
             >
                 <FontAwesomeIcon
                     icon={faMinus}
@@ -80,7 +81,7 @@ class ScaleGizmo extends React.Component {
                     className="scale_button"
                 />
             </div>
-        );
+        )}</Translation>;
     }
 }
 

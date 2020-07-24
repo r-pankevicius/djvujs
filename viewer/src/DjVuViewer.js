@@ -8,6 +8,7 @@ import { loadFile } from './utils';
 import EventEmitter from 'eventemitter3';
 import Consts, { constant } from './constants/consts';
 import { get } from './reducers';
+import configurei18n from './configurei18n';
 
 const Events = constant({
     PAGE_NUMBER_CHANGED: null,
@@ -18,12 +19,26 @@ const Events = constant({
 export default class DjVuViewer extends EventEmitter {
 
     static VERSION = '0.3.5';
-
     static Events = Events;
+    static i18nInitialized = false;
 
-    constructor() {
+    /**
+     * Constructor.
+     * @param {Object} options (Optional) Options to customize viewer behaviour.
+     * 
+     * options.i18nextOptions - localization options, see documentation (TBD).
+     */
+    constructor(options) {
         super();
         this.store = configureStore(this.eventMiddleware);
+
+        // Localization is initialized only once, because it's global, not scoped,
+        // but that should be fine, because I can't imagine realistic use case of having
+        // several viewers using different languages.
+        if (!this.constructor.i18nInitialized) {
+            configurei18n(options ? options.i18nextOptions : undefined);
+            this.constructor.i18nInitialized = true;
+        }
 
         if (process.env.NODE_ENV === 'development') {
             if (module.hot) {

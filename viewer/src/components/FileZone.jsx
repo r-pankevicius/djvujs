@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import cx from 'classnames';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
@@ -62,11 +63,11 @@ class FileZone extends React.Component {
             drag_over: this.state.isDragOver
         };
 
-        return (
+        return <Translation>{ t => (
             <div
                 className={cx(classes)}
                 onClick={this.onClick}
-                title="Open another .djvu file!"
+                title={t("Open another .djvu file")}
                 onDragEnter={this.checkDrag}
                 onDragOver={this.checkDrag}
                 onDragLeave={this.onDragLeave}
@@ -85,7 +86,7 @@ class FileZone extends React.Component {
                     ref={node => this.input = node}
                 />
             </div>
-        );
+        )}</Translation>;
     }
 }
 

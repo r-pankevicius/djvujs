@@ -7,6 +7,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import CanvasImage from './CanvasImage';
 import TextLayer from './TextLayer';
 import Consts from '../constants/consts';
+import { Translation } from 'react-i18next';
 
 /**
  * A component encapsulating the text layer, the canvas image, and adding additional wrapper to fix the size of the block,
@@ -77,7 +78,7 @@ class ComplexImage extends React.PureComponent {
                                     icon={faSpinner}
                                     pulse={true}
                                 />
-                                <span> Loading...</span>
+                                <Translation>{ t => <span>{t('Loading...')}</span> }</Translation>
                             </div>
                     }
                     {this.props.textZones ? <TextLayer

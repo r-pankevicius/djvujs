@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { Translation } from 'react-i18next';
 import { get } from '../reducers/rootReducer';
 
 class StatusBar extends React.Component {
@@ -20,7 +21,11 @@ class StatusBar extends React.Component {
                     icon={isLoading ? faSpinner : faCheck}
                     pulse={isLoading ? true : false}
                 />
-                <span className="message">{isLoading ? "Loading..." : "Ready"}</span>
+                <Translation>
+                {
+                    t =>  <span className="message">{isLoading ? t("Loading...") : t("Ready")}</span>
+                }
+                </Translation>
             </div>
         );
     }

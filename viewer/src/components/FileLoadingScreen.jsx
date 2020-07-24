@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { Translation } from 'react-i18next';
 
 import { get } from '../reducers/rootReducer';
 
@@ -22,7 +23,7 @@ class FileLoadingScreen extends React.Component {
                         icon={faSpinner}
                         pulse={true}
                     />
-                    <span> Loading...</span>
+                    <Translation>{ t => <span>{t('Loading...')}</span> }</Translation>
                 </div>
                 <div className="bytes" style={(loaded || total) ? null : { visibility: "hidden" }}>
                     {Math.round(loaded / 1024).toLocaleString('ru-RU')} KB {total ? `/ ${Math.round(total / 1024).toLocaleString('ru-RU')} KB` : ''}

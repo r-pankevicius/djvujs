@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 
@@ -13,15 +14,15 @@ class HelpButton extends React.Component {
     };
 
     render() {
-        return (
-            <span title="Show help window">
-                <FontAwesomeIcon
-                    className="control_button"
-                    icon={faQuestionCircle}
-                    onClick={this.props.showHelpWindow}
-                />
-            </span>
-        );
+        return <Translation>{ t => (
+                <span title={t("Show help window")}>
+                    <FontAwesomeIcon
+                        className="control_button"
+                        icon={faQuestionCircle}
+                        onClick={this.props.showHelpWindow}
+                    />
+                </span>
+            )}</Translation>;
     }
 }
 

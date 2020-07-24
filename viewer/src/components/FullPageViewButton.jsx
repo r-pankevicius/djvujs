@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExpand, faCompress } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,15 +19,15 @@ class FullPageViewButton extends React.Component {
     };
 
     render() {
-        return (
-            <div title="Switch full page mode!">
+        return <Translation>{ t => (
+            <div title={t("Switch full page mode")}>
                 <FontAwesomeIcon
                     className="control_button"
                     icon={this.props.isFullPageView ? faCompress : faExpand}
                     onClick={this.onClick}
                 />
             </div>
-        );
+        )}</Translation>;
     }
 }
 

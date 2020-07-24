@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt, faFileImage } from '@fortawesome/free-regular-svg-icons';
 
@@ -29,26 +30,26 @@ class ViewModeButtons extends React.Component {
 
     render() {
         const { isContinuousScrollMode, isTextMode, isIndirect } = this.props;
-        return (
+        return <Translation>{ t => (
             <div className="view_mode_group">
                 {isIndirect ? null :
                     <span
                         className={`continuous_scroll_button control_button ${isContinuousScrollMode && !isTextMode ? 'active' : ''}`}
-                        title="Continuous scroll view mode"
+                        title={t("Continuous scroll view mode")}
                         onClick={this.enableContinuousScrollMode}
                     >
                         <FontAwesomeIcon icon={faFileImage} />
                         <FontAwesomeIcon icon={faFileImage} />
                     </span>
                 }
-                <span title={"Single page view mode"} className={!isTextMode && !isContinuousScrollMode ? 'active' : ''}>
+                <span title={t("Single page view mode")} className={!isTextMode && !isContinuousScrollMode ? 'active' : ''}>
                     <FontAwesomeIcon
                         className="control_button"
                         icon={faFileImage}
                         onClick={this.enableSinglePageMode}
                     />
                 </span>
-                <span title="Text view mode" className={isTextMode ? 'active' : ''}>
+                <span title={t("Text view mode")} className={isTextMode ? 'active' : ''}>
                     <FontAwesomeIcon
                         className="control_button"
                         icon={faFileAlt}
@@ -56,7 +57,7 @@ class ViewModeButtons extends React.Component {
                     />
                 </span>
             </div>
-        );
+        )}</Translation>;
     }
 }
 

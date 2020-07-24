@@ -1,0 +1,22 @@
+{
+  "translation": {
+    "Loading..." : "Loading...",
+    "Ready" : "Ready",
+    "Contents" : "Contents",
+    "No contents provided" : "No contents provided",
+    "Save" : "Save",
+    "Save document" : "Save document",
+    "Close document" : "Close document",
+    "Continuous scroll view mode" : "Continuous scroll view mode",
+    "Single page view mode" : "Single page view mode",
+    "Text view mode" : "Text view mode",
+    "Text cursor mode" : "Text cursor mode",
+    "Grab cursor mode" : "Grab cursor mode",
+    "clickOnPageHint" : "You can click on the page number to enter it manually",
+    "scaleWithMouseHint" : "You also can scale page using Ctrl + MouseWheel",
+    "Rotate the page" : "Rotate the page",
+    "Open another .djvu file" : "Open another .djvu file",
+    "Show help window" : "Show help window",
+    "Switch full page mode": "Switch full page mode"
+  }
+}

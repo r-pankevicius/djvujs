@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 
 import Actions from '../actions/actions';
 import TreeItem from './TreeItem';
@@ -32,15 +33,17 @@ class ContentsPanel extends React.Component {
     render() {
         const contents = this.props.contents;
         return (
-            <div className="contents_panel">
-                <div className="header">Contents</div>
-                {contents && contents.map((bookmark, i) => {
-                    return <TreeItem key={i} {...this.makeTreeItemDataByBookmark(bookmark)} />
-                })}
-                {contents ? null :
-                    <div className="no_contents_message">No contents provided</div>
-                }
-            </div>
+            <Translation>{ t => 
+                <div className="contents_panel">
+                    <div className="header">{t('Contents')}</div>
+                    {contents && contents.map((bookmark, i) => {
+                        return <TreeItem key={i} {...this.makeTreeItemDataByBookmark(bookmark)} />
+                    })}
+                    {contents ? null :
+                        <div className="no_contents_message">{t('No contents provided')}</div>
+                    }
+                </div>
+            }</Translation>
         );
     }
 }

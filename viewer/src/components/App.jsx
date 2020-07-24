@@ -13,14 +13,18 @@ import NotificationWindow from './NotificationWindow';
 import HelpWindow from './HelpWindow';
 import ErrorPage from './ErrorPage';
 import LoadingLayer from './LoadingLayer';
+import { Translation } from 'react-i18next';
 
-const TextBlock = ({ text }) => (
-    <div className="text_block">
-        <pre className="text">
-            {text === null ? "Loading ..." : text || <em>No text provided</em>}
-        </pre>
-    </div>
-);
+const TextBlock = ({ text }) =>
+<Translation>{ t=>
+    (
+        <div className="text_block">
+            <pre className="text">
+                {text === null ? t("Loading ...") : text || <em>No text provided</em>}
+            </pre>
+        </div>
+    )
+}</Translation>;
 
 class App extends Component {
     static propTypes = {

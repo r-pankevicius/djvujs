@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
 
@@ -34,10 +35,10 @@ class PageNumberBlock extends React.Component {
     };
 
     render() {
-        return (
+        return <Translation>{ t => (
             <div
                 className="page_number_block"
-                title="Click on the number to enter it manually!"
+                title={t('clickOnPageHint')}
             >
                 <FontAwesomeIcon
                     icon={faArrowAltCircleLeft}
@@ -53,7 +54,7 @@ class PageNumberBlock extends React.Component {
                     className="navbut"
                 />
             </div>
-        );
+        )}</Translation>;
     }
 }
 

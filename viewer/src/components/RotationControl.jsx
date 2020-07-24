@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUndo } from '@fortawesome/free-solid-svg-icons';
 
+import { Translation } from 'react-i18next';
 import Actions from '../actions/actions';
 import { get } from '../reducers/rootReducer';
 
@@ -21,13 +22,13 @@ class RotationControl extends React.Component {
     }
 
     render() {
-        return (
-            <div className="rotation_control" title="Rotate the page">
+        return <Translation>{ t => (
+            <div className="rotation_control" title={t("Rotate the page")}>
                 <FontAwesomeIcon icon={faUndo} className="rotate_left_button" onClick={this.rotateLeft} />
                 <span className="rotation_value">{this.props.rotation}&deg;</span>
                 <FontAwesomeIcon icon={faUndo} className="rotate_right_button" onClick={this.rotateRight} />
             </div>
-        );
+        )}</Translation>;
     }
 }
 

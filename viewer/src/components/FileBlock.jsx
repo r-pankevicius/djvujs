@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
@@ -31,11 +32,11 @@ class FileBlock extends React.Component {
     };
 
     render() {
-        return (
+        return <Translation>{ t => (
             <div
                 className="file_block"
                 onClick={this.onClick}
-                title="Open another .djvu file!"
+                title={t("Open another .djvu file")}
             >
                 <FontAwesomeIcon
                     icon={faUpload}
@@ -50,7 +51,7 @@ class FileBlock extends React.Component {
                     ref={node => this.input = node}
                 />
             </div>
-        );
+        )}</Translation>;
     }
 }
 

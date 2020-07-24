@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
 
@@ -16,10 +17,10 @@ class FilePanel extends React.Component {
     };
 
     render() {
-        return (
+        return <Translation>{ t => (
             <div className="file_panel">
                 {this.props.fileName ? (
-                    <span title="Close document">
+                    <span title={t('Close document')}>
                         <FontAwesomeIcon
                             className="control_button"
                             onClick={this.props.closeDocument}
@@ -32,13 +33,13 @@ class FilePanel extends React.Component {
                     <button
                         className="text_button"
                         onClick={this.props.saveDocument}
-                        title="Save document"
+                        title={t('Save document')}
                     >
-                        Save
+                        {t('Save')}
                     </button>
                 ) : null}
             </div>
-        );
+        )}</Translation>;
     }
 }
 

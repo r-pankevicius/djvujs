@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExpand, faCompress } from '@fortawesome/free-solid-svg-icons';
+import { Translation } from 'react-i18next';
 
 import ModalWindow from './ModalWindow';
 import Actions from '../actions/actions';
@@ -22,7 +23,7 @@ class HelpWindow extends React.Component {
             return null;
         }
 
-        return (
+        return <Translation>{ t => (
             <ModalWindow onClose={closeHelpWindow} isFixedSize={true}>
                 <div className="help_window">
 
@@ -37,7 +38,7 @@ class HelpWindow extends React.Component {
                     </div>
 
                     <div className="header">Hotkeys</div>
-                    <div className="para"><em>Ctrl+S</em> - save document</div>
+                    <div className="para"><em>Ctrl+S</em> - {t('Save document')}</div>
                     <div className="para"><em>Left Arrow</em> - go to the previous page</div>
                     <div className="para"><em>Right Arrow</em> - go to the next page</div>
 
@@ -50,7 +51,7 @@ class HelpWindow extends React.Component {
 
                 </div>
             </ModalWindow>
-        );
+        )}</Translation>;
     }
 }
 
