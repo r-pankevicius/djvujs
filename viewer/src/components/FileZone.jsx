@@ -77,7 +77,7 @@ class FileZone extends React.Component {
                     icon={faUpload}
                     className="file_icon"
                 />
-                <span> Drag & Drop a file here or click to choose manually!</span>
+                <span>{t("dragOrChooseFile")}</span>
                 <input
                     style={{ display: 'none' }}
                     type="file"

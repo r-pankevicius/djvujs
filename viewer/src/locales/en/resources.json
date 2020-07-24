@@ -16,7 +16,19 @@
     "scaleWithMouseHint" : "You also can scale page using Ctrl + MouseWheel",
     "Rotate the page" : "Rotate the page",
     "Open another .djvu file" : "Open another .djvu file",
+    "Choose a file" : "Choose a file",
+    "dragOrChooseFile" : "Drag & Drop a file here or click to choose manually",
     "Show help window" : "Show help window",
     "Switch full page mode": "Switch full page mode"
+  },
+  "initialScreen": {
+    "welcomeFmt" : "DjVu.js Viewer v. %(viewerVersion)s welcomes you!",
+    "poweredByFmt" : "(powered by DjVu.js v. %(djvuLibraryVersion)s))",
+    "youCanOpenLinks" : "Now you can open links to .djvu files automatically (with a click) when the corresponding option is enabled.",
+    "tryToClickLinkFmt" : "Just try to click the link \"%(linkToSampleDjvuFile)s\" with the option enabled and disabled to understand what it is about.",
+    "Some DjVu file" : "Some DjVu file",
+    "chromeExtensionFmt" : "The Google Chrome's version of the extension allows to open local files by a browser directly (via a double-click). But you have to enable the %(allowAccessToFileUrls)s option on the extension's options page. Otherwise, the feature won't work.",
+    "Allow access to file URLs": "Allow access to file URLs",
+    "clickHelpButtonFmt" : "Click the %(helpButton)s button to learn more about the application."
   }
 }

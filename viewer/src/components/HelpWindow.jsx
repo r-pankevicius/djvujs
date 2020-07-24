@@ -26,8 +26,7 @@ class HelpWindow extends React.Component {
         return <Translation>{ t => (
             <ModalWindow onClose={closeHelpWindow} isFixedSize={true}>
                 <div className="help_window">
-
-                    <div className="header">{`DjVu.js Viewer v.${DjVu.Viewer.VERSION} (DjVu.js v.${DjVu.VERSION})`}</div>
+                <div className="header">{`DjVu.js Viewer v.${DjVu.Viewer.VERSION} (DjVu.js v.${DjVu.VERSION})`}</div>
                     <div className="para">
                         The application for viewing .djvu files in the browser.<br />
                         If something doesn't work properly, feel free to write about the problem 
@@ -48,7 +47,6 @@ class HelpWindow extends React.Component {
                         to switch the viewer to full page mode and back.
                         If you work with the browser extension, these buttons will cause no effect, since the viewer takes the whole page by default.
                      </div>
-
                 </div>
             </ModalWindow>
         )}</Translation>;

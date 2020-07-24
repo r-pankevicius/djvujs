@@ -16,7 +16,20 @@
     "scaleWithMouseHint" : "TODO SV You also can scale page using Ctrl + MouseWheel",
     "Rotate the page" : "TODO SV Rotate the page",
     "Open another .djvu file" : "TODO SV Open another .djvu file",
+    "Choose a file" : "TODO SV Choose a file",
+    "dragOrChooseFile" : "TODO SV Drag & Drop a file here or click to choose manually",
     "Show help window" : "TODO SV Show help window",
     "Switch full page mode": "TODO SV Switch full page mode"
+  },
+  "initialScreen": {
+    "welcomeFmt" : "TODO SV DjVu.js Viewer v. %(viewerVersion)s welcomes you!",
+    "poweredByFmt" : "TODO SV (powered by DjVu.js v. %(djvuLibraryVersion)s))",
+    "youCanOpenLinks" : "TODO SV Now you can open links to .djvu files automatically (with a click) when the corresponding option is enabled.",
+    "tryToClickLinkFmt" : "TODO SV Just try to click the link \"%(linkToSampleDjvuFile)s\" with the option enabled and disabled to understand what it is about.",
+    "Some DjVu file" : "TODO SV Some DjVu file",
+    "chromeExtensionFmt" : "TODO SV The Google Chrome's version of the extension allows to open local files by a browser directly (via a double-click). But you have to enable the %(allowAccessToFileUrls)s option on the extension's options page. Otherwise, the feature won't work.",
+    "Allow access to file URLs": "TODO SV Allow access to file URLs",
+    "clickHelpButtonFmt" : "TODO SV Click the %(helpButton)s button to learn more about the application."
   }
 }
+

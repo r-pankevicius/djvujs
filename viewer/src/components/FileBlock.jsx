@@ -42,7 +42,7 @@ class FileBlock extends React.Component {
                     icon={faUpload}
                     className="file_icon"
                 />
-                <span className="file_name">{this.props.fileName || "Choose a file"}</span>
+                <span className="file_name">{this.props.fileName || t("Choose a file")}</span>
                 <input
                     style={{ display: 'none' }}
                     type="file"
