@@ -2,11 +2,12 @@ import React from 'react';
 import { Translation } from 'react-i18next';
 import Interpolate from 'react-interpolate-component';
 
-import HelpButton from './HelpButton';
+import HelpButton from '../HelpButton';
 import FileZone from './FileZone';
-import DjVu from '../DjVu';
-import Options from './Options';
-import { inExtension, isChromeExtension } from '../utils';
+import DjVu from '../../DjVu';
+import Options from '../Options';
+import { inExtension } from '../../utils';
+import LinkBlock from './LinkBlock';
 
 export default () => <Translation>{ t => {
 
@@ -24,26 +25,27 @@ export default () => <Translation>{ t => {
     return (
     <div className="initial_screen">
         <div className="content">
-            <div className="header">
+            <div css={`text-align: center; font-size: 2em`}>
                 <Interpolate with={formatKeys} format={t('initialScreen:welcomeFmt')} />
             </div>
-            <div className="djvujs_version">
+            <div css={`font-style: italic; margin-top: 0.5em; margin-bottom: 1em; font-size: 0.8em`}>
                 <Interpolate with={formatKeys} format={t('initialScreen:poweredByFmt')} />
             </div>
 
             {inExtension ? <div className="central">
                 <Options />
-                <div className="update_message">
+                {/* <div className="update_message">
                     {t('initialScreen:youCanOpenLinks')}
-                    <Interpolate with={formatKeys} format={t('initialScreen:tryToClickLinkFmt')} />
-                </div>
+                    <Interpolate with={formatKeys} format={t('initialScreen:tryToClickLinkFmt')} />.
+                </div> */}
             </div> : null}
-            {isChromeExtension ? <div className="previous_update_message">
+            {/* {isChromeExtension ? <div className="previous_update_message">
                 <Interpolate with={formatKeys} format={t('initialScreen:chromeExtensionFmt')} />
-            </div> : null}
-            <div style={{ clear: 'both' }}>
+            </div> : null} */}
+            <div style={{ clear: 'both', margin: '1em' }}>
                 <Interpolate with={formatKeys} format={t('initialScreen:clickHelpButtonFmt')} />
             </div>
+            {inExtension ? <LinkBlock /> : null}
             <FileZone />
         </div>
     </div>);

@@ -6,7 +6,7 @@ import { Translation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
-import Actions from '../actions/actions';
+import Actions from '../../actions/actions';
 
 class FileZone extends React.Component {
 
