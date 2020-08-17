@@ -1,5 +1,6 @@
 import Consts from '../constants/consts.js';
 import { get } from '../reducers/rootReducer';
+import i18next from "i18next";
 import DjVu from '../DjVu';
 
 const Actions = {
@@ -74,11 +75,11 @@ const Actions = {
         if (!header || !message) {
             switch (error.code) {
                 case DjVu.ErrorCodes.INCORRECT_FILE_FORMAT:
-                    header = "Incorrect file format!";
-                    message = "The provided file isn't a .djvu file!";
+                    header = i18next.t("Incorrect file format!");
+                    message = i18next.t("The provided file isn't a .djvu file!");
                     break;
                 default:
-                    header = "Unexpected error ocurred!";
+                    header = i18next.t("Unexpected error ocurred!");
                     message = JSON.stringify(error);
             }
         }

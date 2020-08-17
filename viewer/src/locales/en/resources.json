@@ -19,7 +19,15 @@
     "Choose a file" : "Choose a file",
     "dragOrChooseFile" : "Drag & Drop a file here or click to choose manually",
     "Show help window" : "Show help window",
-    "Switch full page mode": "Switch full page mode"
+    "Switch full page mode": "Switch full page mode",
+    "Response status code: {{status}}" : "Response status code: {{status}}",
+    "Response status text: {{statusText}}" : "Response status text: {{statusText}}",
+    "Web request error" : "Web request error",
+    "An error occurred, the file wasn't loaded. The error object is printed to the browser console." :
+      "An error occurred, the file wasn't loaded. The error object is printed to the browser console.",
+    "Incorrect file format!" : "Incorrect file format!",
+    "The provided file isn't a .djvu file!" : "The provided file isn't a .djvu file!",
+    "Unexpected error ocurred!" : "Unexpected error ocurred!"
   },
   "initialScreen": {
     "welcomeFmt" : "DjVu.js Viewer v. %(viewerVersion)s welcomes you!",
