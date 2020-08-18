@@ -32,7 +32,7 @@
   },
   "initialScreen": {
     "welcomeFmt" : "DjVu.js Viewer v. %(viewerVersion)s Välkommen!",
-    "poweredByFmt" : "(drivs av DjVu.js v. %(djvuLibraryVersion)s))",
+    "poweredByFmt" : "(baserat på DjVu.js v. %(djvuLibraryVersion)s)",
     "youCanOpenLinks" : "Nu kan du öppna länkar till .djvu-filer automatiskt (med ett klick) när när motsvarande alternativ är aktiverat.",
     "tryToClickLinkFmt" : "Försök att klicka på länken \"%(linkToSampleDjvuFile)s\" när alternativet är aktiverat och avaktivera det sedan för att se skillnaden.",
     "Some DjVu file" : "Någon DjVu-fil",
@@ -41,7 +41,7 @@
     "clickHelpButtonFmt" : "Klicka på knappen %(helpButton)s för att lära dig mer om applikationen."
   },
   "helpScreen" : {
-    "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s är baserat på DjVu.js v. %(djvuLibraryVersion)s)",
+    "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s (baserat på DjVu.js v. %(djvuLibraryVersion)s)",
     "appDescription" : "Applikation för att se .djvu-filer i browsern.",
     "fellFreeWriteToAuthorAboutProblemFmt" : "Om något inte fungerar korrekt, vänligen kontakta %(mailToAuthorLink)s.",
     "officialWebSiteFmt" : "Den officiella webbsidan är %(officialWebSiteLink)s.",

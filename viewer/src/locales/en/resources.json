@@ -32,7 +32,7 @@
   },
   "initialScreen": {
     "welcomeFmt" : "DjVu.js Viewer v. %(viewerVersion)s welcomes you!",
-    "poweredByFmt" : "(powered by DjVu.js v. %(djvuLibraryVersion)s))",
+    "poweredByFmt" : "(powered by DjVu.js v. %(djvuLibraryVersion)s)",
     "youCanOpenLinks" : "Now you can open links to .djvu files automatically (with a click) when the corresponding option is enabled.",
     "tryToClickLinkFmt" : "Just try to click the link \"%(linkToSampleDjvuFile)s\" with the option enabled and disabled to understand what it is about.",
     "Some DjVu file" : "Some DjVu file",
@@ -41,7 +41,7 @@
     "clickHelpButtonFmt" : "Click the %(helpButton)s button to learn more about the application."
   },
   "helpScreen" : {
-    "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s powered by DjVu.js v. %(djvuLibraryVersion)s)",
+    "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s (powered by DjVu.js v. %(djvuLibraryVersion)s)",
     "appDescription" : "The application for viewing .djvu files in the browser.",
     "fellFreeWriteToAuthorAboutProblemFmt" : "If something isn't working properly feel free to write about the problem to %(mailToAuthorLink)s.",
     "officialWebSiteFmt" : "The official website is %(officialWebSiteLink)s.",
