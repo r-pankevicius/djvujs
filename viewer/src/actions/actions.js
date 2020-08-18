@@ -75,11 +75,11 @@ const Actions = {
         if (!header || !message) {
             switch (error.code) {
                 case DjVu.ErrorCodes.INCORRECT_FILE_FORMAT:
-                    header = i18next.t("Incorrect file format!");
-                    message = i18next.t("The provided file isn't a .djvu file!");
+                    header = i18next.t("Incorrect file format.");
+                    message = i18next.t("The provided file isn't a .djvu file.");
                     break;
                 default:
-                    header = i18next.t("Unexpected error ocurred!");
+                    header = i18next.t("Unexpected error ocurred.");
                     message = JSON.stringify(error);
             }
         }

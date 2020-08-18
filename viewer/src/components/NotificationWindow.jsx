@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import i18next from "i18next";
 
 import ModalWindow from './ModalWindow';
 import Actions from '../actions/actions';
@@ -15,18 +16,18 @@ class NotificationWindow extends React.Component {
     };
 
     render() {
-        const { header, message, closeNotificationWindow } = this.props;
+        const { header, message, closeNotificationWindow, type } = this.props;
 
         if (!header) {
             return null;
         }
-        const isError = this.props.type === 'error';
+        const isError = type === 'error';
 
         return (
             <ModalWindow isError={isError} onClose={closeNotificationWindow}>
                 <div className="notification_window">
                     <div className="header">
-                        {isError ? "Error: " + header : header}
+                        { isError ? i18next.t("Error") + ": " + header : header }
                     </div>
                     <div className="body">{message}</div>
                 </div>

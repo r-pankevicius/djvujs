@@ -10,7 +10,7 @@
     "Continuous scroll view mode" : "Visningsläge med kontinuerlig scrolling",
     "Single page view mode" : "Visningsläge med en sida",
     "Text view mode" : "Visningsläge med text",
-    "Text cursor mode" : "Text cursor mode",
+    "Text cursor mode" : "Visningsläge med textmarkör",
     "Grab cursor mode" : "Visningsläge med greppbart markörläge",
     "clickOnPageHint" : "Du kan klicka på sidnumret för att ange det manuellt",
     "scaleWithMouseHint" : "Du kan också skala sidan genom att använda Ctrl + Skrollknappen på musen",
@@ -19,11 +19,20 @@
     "Choose a file" : "Välj en fil",
     "dragOrChooseFile" : "Dra och släpp en fil här eller klicka för att välja en manuellt",
     "Show help window" : "Visa hjälpsida",
-    "Switch full page mode": "Ändra visningsläge till helsida"
+    "Switch full page mode": "Ändra visningsläge till helsida",
+    "Response status code: {{status}}" : "Status: {{status}}",
+    "Response status text: {{statusText}}" : "Status text: {{statusText}}",
+    "Web request error" : "Webbfrågefel",
+    "An error occurred, the file wasn't loaded. The error object is printed to the browser console." :
+      "Ett fel inträffade, filen laddades inte. Objektet som är fel är utskrivet i browserkonsollen. ",
+    "Incorrect file format." : "Felaktigt filformat.",
+    "The provided file isn't a .djvu file." : "Filen är inte en .djvu-fil.",
+    "Unexpected error ocurred." : "Ett oväntat fel inträffade.",
+    "Error" : "Fel"
   },
   "initialScreen": {
     "welcomeFmt" : "DjVu.js Viewer v. %(viewerVersion)s Välkommen!",
-    "poweredByFmt" : "(powered by DjVu.js v. %(djvuLibraryVersion)s))",
+    "poweredByFmt" : "(drivs av DjVu.js v. %(djvuLibraryVersion)s))",
     "youCanOpenLinks" : "Nu kan du öppna länkar till .djvu-filer automatiskt (med ett klick) när när motsvarande alternativ är aktiverat.",
     "tryToClickLinkFmt" : "Försök att klicka på länken \"%(linkToSampleDjvuFile)s\" när alternativet är aktiverat och avaktivera det sedan för att se skillnaden.",
     "Some DjVu file" : "Någon DjVu-fil",

@@ -25,9 +25,10 @@
     "Web request error" : "Web request error",
     "An error occurred, the file wasn't loaded. The error object is printed to the browser console." :
       "An error occurred, the file wasn't loaded. The error object is printed to the browser console.",
-    "Incorrect file format!" : "Incorrect file format!",
-    "The provided file isn't a .djvu file!" : "The provided file isn't a .djvu file!",
-    "Unexpected error ocurred!" : "Unexpected error ocurred!"
+    "Incorrect file format." : "Incorrect file format.",
+    "The provided file isn't a .djvu file." : "The provided file isn't a .djvu file.",
+    "Unexpected error ocurred." : "Unexpected error ocurred.",
+    "Error" : "Error"
   },
   "initialScreen": {
     "welcomeFmt" : "DjVu.js Viewer v. %(viewerVersion)s welcomes you!",
