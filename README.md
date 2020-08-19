@@ -1,5 +1,10 @@
 # DjVu.js (fork, branch 10.7.1-SP4)
 
+## Fork info
+This is a forked repository, visit master repo at https://github.com/RussCoder/djvujs.
+
+**Warning**: This fork has localization support that is incompatible with the master repo.
+
 ## About / О проекте
 
 **DjVu.js** is a program library for working with `.djvu` online. It's written in JavaScript and can be run in the web browsers without any connection with the server. DjVu.js can be used for splitting (and concatenation) of `.djvu` files, rendering pages of a `.djvu` document, converting (and compressing) images into `.djvu` documents and for analyzing of metadata of `.djvu` documents.
