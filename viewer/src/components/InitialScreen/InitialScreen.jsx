@@ -21,7 +21,7 @@ export default () => <Translation>{ t => {
             </a>,
         allowAccessToFileUrls: <strong>"{t('initialScreen:Allow access to file URLs')}"</strong>,
         helpButton: <HelpButton />,
-        webSiteHref: <a href="https://djvu.js.org/" target="_blank">{t('initialScreen:official website')}</a>
+        webSiteHref: <a href="https://djvu.js.org/" target="_blank" rel="noopener noreferrer">{t('initialScreen:official website')}</a>
     };
 
     const clickHelpMessage =
