@@ -9,8 +9,8 @@ if (process.env.NODE_ENV !== 'production') {
         window.DjVuViewerInstance.loadDocumentByUrl("/DjVu3Spec.djvu#page=10");
         
         // Tests for file names from Content-Disposition header
-        //window.DjVuViewerInstance.loadDocumentByUrl("/djvufile?fname=%E5%9C%B0%E5%9B%BE.djvu&fntype=1");
-        //window.DjVuViewerInstance.loadDocumentByUrl("/djvufile?fname=%E5%9C%B0%E5%9B%BE.djvu&fntype=2");
+        //window.DjVuViewerInstance.loadDocumentByUrl("/djvufile?fname=%E5%9C%B0%E5%9B%BE.djvu");
+        //window.DjVuViewerInstance.loadDocumentByUrl("/djvufile?fname=%E5%9C%B0%E5%9B%BE.djvu&cd=attachment");
 
         //window.DjVuViewerInstance.loadDocumentByUrl("http://localhost/djvuMap/obs-thats-an-error");
         //window.DjVuViewerInstance.loadDocumentByUrl("/tmp/czech_indirect/index.djvu", { pageRotation: 0, djvuOptions: {baseUrl: '/tmp/czech_indirect/'} });
