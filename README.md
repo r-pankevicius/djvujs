@@ -1,4 +1,4 @@
-# DjVu.js
+# DjVu.js (fork, branch 10.7.1-SP4)
 
 ## About / О проекте
 
