@@ -38,7 +38,9 @@
     "Some DjVu file" : "Some DjVu file",
     "chromeExtensionFmt" : "The Google Chrome's version of the extension allows to open local files by a browser directly (via a double-click). But you have to enable the %(allowAccessToFileUrls)s option on the extension's options page. Otherwise, the feature won't work.",
     "Allow access to file URLs": "Allow access to file URLs",
-    "clickHelpButtonFmt" : "Click the %(helpButton)s button to learn more about the application."
+    "clickHelpButtonFmt" : "Click the %(helpButton)s button to learn more about the application.",
+    "visitWebSiteFmt" : "Visit %(webSiteHref)s for more information.",
+    "official website" : "official website"
   },
   "helpScreen" : {
     "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s (powered by DjVu.js v. %(djvuLibraryVersion)s)",

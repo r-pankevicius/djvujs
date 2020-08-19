@@ -38,7 +38,9 @@
     "Some DjVu file" : "Någon DjVu-fil",
     "chromeExtensionFmt" : "Google Chrome's version av tillägget tillåter att öppna lokala filer i browsern (genom att dubbelklicka). Men du måste aktivera %(allowAccessToFileUrls)s i inställningarna på sidan för tilläg, annars kommer funktionen inte att fungera",
     "Allow access to file URLs": "Tillåt access till fil-URLer.",
-    "clickHelpButtonFmt" : "Klicka på knappen %(helpButton)s för att lära dig mer om applikationen."
+    "clickHelpButtonFmt" : "Klicka på knappen %(helpButton)s för att lära dig mer om applikationen.",
+    "visitWebSiteFmt" : "Besök %(webSiteHref)s för mer information.",
+    "official website" : "den officiella hemsidan"
   },
   "helpScreen" : {
     "productInfoFmt" : "DjVu.js Viewer v. %(viewerVersion)s (baserat på DjVu.js v. %(djvuLibraryVersion)s)",
@@ -56,4 +58,3 @@
     "fullPageHasNoEffectInBrowserExtension" : "Om du använder tillägget i browsern kommer dessa knappar inte att fungera då visningsprogrammet hanterar hela sidan som standard."
   }
 }
-

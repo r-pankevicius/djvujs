@@ -20,15 +20,14 @@ export default () => <Translation>{ t => {
                 {t('initialScreen:Some DjVu file')}
             </a>,
         allowAccessToFileUrls: <strong>"{t('initialScreen:Allow access to file URLs')}"</strong>,
-        helpButton: <HelpButton />
+        helpButton: <HelpButton />,
+        webSiteHref: <a href="https://djvu.js.org/" target="_blank">{t('initialScreen:official website')}</a>
     };
 
-    const clickHelpMessage = viewerOptions.helpButton ?
-            <div style={{ clear: 'both', margin: '1em' }}>
-                <Interpolate with={formatKeys} format={t('initialScreen:clickHelpButtonFmt')} />
-            </div>
-        :
-            null;
+    const clickHelpMessage =
+        <div style={{ clear: 'both', margin: '1em' }}>
+            <Interpolate with={formatKeys} format={t(viewerOptions.helpButton ? 'initialScreen:clickHelpButtonFmt' : 'initialScreen:visitWebSiteFmt')} />
+        </div>;
 
     return (
     <div className="initial_screen">
