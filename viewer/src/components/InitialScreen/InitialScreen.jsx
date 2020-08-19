@@ -8,6 +8,7 @@ import DjVu from '../../DjVu';
 import Options from '../Options';
 import { inExtension } from '../../utils';
 import LinkBlock from './LinkBlock';
+import viewerOptions from '../../viewerOptions';
 
 export default () => <Translation>{ t => {
 
@@ -21,6 +22,13 @@ export default () => <Translation>{ t => {
         allowAccessToFileUrls: <strong>"{t('initialScreen:Allow access to file URLs')}"</strong>,
         helpButton: <HelpButton />
     };
+
+    const clickHelpMessage = viewerOptions.helpButton ?
+            <div style={{ clear: 'both', margin: '1em' }}>
+                <Interpolate with={formatKeys} format={t('initialScreen:clickHelpButtonFmt')} />
+            </div>
+        :
+            null;
 
     return (
     <div className="initial_screen">
@@ -42,9 +50,7 @@ export default () => <Translation>{ t => {
             {/* {isChromeExtension ? <div className="previous_update_message">
                 <Interpolate with={formatKeys} format={t('initialScreen:chromeExtensionFmt')} />
             </div> : null} */}
-            <div style={{ clear: 'both', margin: '1em' }}>
-                <Interpolate with={formatKeys} format={t('initialScreen:clickHelpButtonFmt')} />
-            </div>
+            { clickHelpMessage }
             {inExtension ? <LinkBlock /> : null}
             <FileZone />
         </div>
