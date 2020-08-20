@@ -2,8 +2,8 @@
 // Need to implement passing options via DjVuViever ctor
 
 const options = {
-    helpPage: true,
-    fullPageSwitch: true
+    helpPage: false,
+    fullPageSwitch: false
 };
 
 export default options;
