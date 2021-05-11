@@ -215,19 +215,19 @@ export default {
 
     // Printing
     "Print document":
-      "Stampa documento",
+        "Stampa documento",
     "Pages must be rendered before printing.":
-        "Le pagine devono essere processate prima della stampa",
+        "Le pagine devono essere processate prima della stampa.",
     "It may take a while.":
-        "Potrebbe richiedere del tempo",
+        "Potrebbe richiedere tempo",
     "Select the pages you want to print.":
-        "Seleziona le oagine da stampare",
+        "Seleziona le pagine da stampare",
     "From":
         "Da",
     "to":
         "a",
     "Prepare pages for printing":
-        "Avvia il processo di stampa",
+        "Avvia processo di stampa",
     "Preparing pages for printing":
         "Sto preparando le pagine per la stampa",
 };

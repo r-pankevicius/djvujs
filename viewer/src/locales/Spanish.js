@@ -15,219 +15,219 @@
 export default {
     // language info
     englishName:
-        "Swedish",
+        "Spanish",
     nativeName:
-        "Svenska",
+        "Castellano",
 
     "Language":
-        "Språk", // not used now, but will be used in options afterwards
+        "Idioma", // not used now, but will be used in options afterwards
 
     // Translation: tooltips and notification
     // (to see the notification window, remove several phrases from any dictionary, except for the English one)
     "Add more":
-        "Lägg till mer",
+        "Añadir mas",
     "The translation isn't complete.":
-        "Översättningen är inte klar.",
+        "La traducción está incompleta.",
     "The following phrases are not translated:":
-        "Följande meningar är inte översatta:",
+        "Las siguientes frases no estan traduccidas:",
     "You can improve the translation here":
-        "Du kan förtydliga översättningen här",
+        "Puedes mejorar la traducción aquí",
 
     // Initial screen
     "#helpButton - learn more about the app":
-        "#helpButton - lär dig mer om applikationen",
+        "#helpButton - saber más sobre la aplicación",
     "#optionsButton - see the available options":
-        "#optionsButton - Se tillgängliga alternativ",
+        "#optionsButton - ver las opciones disponibles",
     "powered with":
-        "baserat på",
+        "Powered  with",
     "Drag & Drop a file here or click to choose manually":
-        "Dra och släpp en fil här eller klicka för att välja en manuellt",
+        "Arrastrar y soltar un archivo o click para elegirlo manualmente",
     "Paste a URL to a djvu file here":
-        "Klistra in en URL till en .djvu-fil här",
+        "Pegar una URL al archivo djvu aquí",
     "Open URL":
-        "Öppna URL",
+        "Abrir URL",
     'Enter a valid URL (it should start with "http(s)://")': // an alert shown when you try to open an empty URL
-        'Ange en giltig URL (den ska börja med "http (s): //")',
+        'Introducir una URL válida (debe comenzar con "http(s)://")',
 
     // Errors. Usually there is a header and a message for each error type.
     // For the web request error there are different types of messages depending on the HTTP status.
     // The ways to see the errors in the viewer are described in comments below.
     // In case of web requests you can load links via the browser extension (via the URL field on the initial screen)
     "Error":
-        "Fel",
+        "Error",
     "Error on page":
-        "Felaktigheter på sidan", // Open 'library/assets/czech_indirect/index.djvu
+        "Error en la página", // Open 'library/assets/czech_indirect/index.djvu
     "Network error":
-        "Nätverksfel", // Disable internet connection and try to load something by URL
+        "Error de red", // Disable internet connection and try to load something by URL
     "Check your network connection":
-        "Kontrollera nätverksanslutningen",
+        "Compruebe su conexión a la red",
     // Load any URL to a nonexistent page on the Internet,
     // e.g. https://djvu.js.org/nonexistentpage
     "Web request error":
-        "Fel vid webbegärning",
+        "Error en la solicitud de la web",
     "404 Document not found":
-        "404 Dokument hittas inte",
+        "404 Documento no encontrado",
     "403 Access forbidden":
-        "403 Åtkomst förbjuden",
+        "403 Acceso prohibido",
     "500 Internal server error":
-        "500 Internt serverfel",
+        "500 Error interno del servidor",
     "The request failed with HTTP status #status":
-        "TBegäran misslyckades med http-status #status",
+        "La solicitud ha fallado con el estado HTTP #status",
     "DjVu file is corrupted": // Open "/library/assets/czech_indirect/dict0085.iff"
-        "DjVu-filen är korrupt:",
+        "El archivo DjVu esta corrupto",
     "The file doesn't comply with the DjVu format specification or it's not a whole DjVu document":
-        "Filen överensstämmer inte med specificerat DjVu-format eller så är dokumentet inte komplett",
+        "El archivo no cumple con la especificación del formato DjVu o no es un documento DjVu completo",
     "Incorrect file format": // Open a not-djvu file.
-        "Felaktigt filformat",
+        "Formato de archivo incorrecto",
     "The provided file is not a DjVu document":
-        "Den angivna filen är inte ett DjVu-dokument",
+        "El archivo proporcionado no es un documento DjVu",
     // Load a URL to a DjVu file with "#page=100500" at the end (both in continuous scroll and single-page view modes)
     // e.g. https://djvu.js.org/assets/djvu_examples/DjVu3Spec.djvu#page=100500
     "Incorrect page number":
-        "Felaktigt sidnummer",
+        "Número de página incorrecto",
     "There is no page with the number #pageNumber":
-        "Felaktigt sidnummer #pageNumber",
+        "No hay ninguna página con el número #pageNumber",
     // "baseURL" is a URL to a document directory,
     // all links inside the document index.djvu are considered relative to this URL.
     // The term "base URL" can be translated as "a URL to the document's folder".
     "No base URL for an indirect DjVu document":  // Open "/library/assets/czech_indirect/index.djvu"
-        "Ingen bas-URL för ett indirekt DjVu-dokument",
+        "No hay URL base para un documento DjVu indirecto",
     "You probably opened an indirect (multi-file) DjVu document manually.":
-        "Du öppnade troligen ett indirekt DjVu-dokument (med flera filer) manuellt.",
+        "Probablemente haya abierto manualmente un documento DjVu indirecto (de varios archivos).",
     "But such multi-file documents can be only loaded by URL.":
-        "Dokument med flera filer kan endast laddas med URL.",
+        "Pero estos documentos de varios archivos sólo pueden cargarse por URL.",
     "Unexpected error": // Of course there is no standard way to produce this kind of error
-        "Ett oväntat fel uppstod",
+        "Error inesperado",
     "Cannot print the error, look in the console":
-        "Kunde inte skriva ut felet, titta i konsolen",
+        "No se puede imprimir el error, mira en la consola",
 
     // Options and its tooltips
     "Options":
-        "Alternativ",
+        "Opciones",
     "Show options window":
-        "Visa fönster med alternativ",
+        "Mostrar ventana de opciones",
     "Color theme":
-        "Färgtema",
+        "Tema de color",
     "Extension options":
-        "Förlängningsalternativ", // the options of the browser extension
+        "Opciones de extensión", // the options of the browser extension
     "Open all links with .djvu at the end via the viewer":
-        "Öppna alla länkar med .djvu via webbläsaren",
+        "Abrir todos los enlaces con .djvu al final a través del visor",
     "All links to .djvu files will be opened by the viewer via a simple click on a link":
-        "Alla länkar till .djvu-filer kommer öppnas i läsaren",
+        "Todos los enlaces a archivos .djvu serán abiertos por el visor mediante un clic simple en un enlace",
     "Detect .djvu files by means of http headers":
-        "Upptäck .djvu-filer med hjälp av HTTP-rubriker",
+        "Detectar archivos .djvu mediante cabeceras http",
     "Analyze headers of every new tab in order to process even links which do not end with the .djvu extension":
-        "Analysera rubriker på alla nya flikar för att känna av om länkar är av .djvu-format (även länkar som inte slutar med \".djvu\"",
+        "Analizar las cabeceras de cada nueva pestaña para procesar incluso los enlaces que no terminan con la extensión .djvu",
 
     // Footer: status bar
     "Ready":
-        "Klar",
+        "Listo",
     "Loading":
-        "Laddar",
+        "Cargando",
 
     // Footer: buttons' tooltips
     "Show help window":
-        "Visa hjälpsida",
+        "Mostrar ventana de ayuda",
     "Switch full page mode":
-        "Ändra visningsläge till helsida",
+        "Cambiar el modo de página completa",
 
     // File Block tooltips
     "Choose a file":
-        "Välj en fil",
+        "Seleccionar archivo",
     "Close document":
-        "Stäng dokument",
+        "Cerrar documento",
     "Save document":
-        "Spara dokument",
+        "Guardar documento",
     "Save":
-        "Spara",
+        "Guardar",
     "Open another .djvu file":
-        "Öppna ytterligare en .djvu-fil",
+        "Abrir otro archivo .djvu",
 
     // Help window
     "The application for viewing .djvu files in the browser.":
-        "Applikation för att se .djvu-filer i browsern.",
+        "La aplicación para ver archivos .djvu en el navegador.",
     "If something doesn't work properly, feel free to write about the problem at #email.":
-        "Om något inte fungerar korrekt, vänligen kontakta #email.",
+        "Si algo no funciona correctamente, no dudes en escribir sobre el problema en #email.",
     "The official website is #website.":
-        "Den officiella webbsidan är #website.",
+        "El sitio web oficial es #website.",
     "The source code is available on #link.":
-        "Källkoden är tillgänglig på #link.",
+        "El código fuente está disponible en #link.",
     "Hotkeys":
-        "Tangebords-genvägar",
+        "Atajos de teclado",
     "save the document":
-        "spara dokument",
+        "Guardar el documento",
     "go to the previous page":
-        "gå till föregående sida",
+        "ir a la página anterior",
     "go to the next page":
-        "gå till nästa sida",
+        "ir a la página siguiente",
     "Controls":
-        "Kontroller",
+        "Controles",
     "#expandIcon and #collapseIcon are to switch the viewer to the full page mode and back.":
-        "Knapparna #expandIcon och #collapseIcon används för att väcla visningsläge till helsida och tillbaka.",
+        "#expandIcon y #collapseIcon son para cambiar el visor al modo de página completa y viceversa.",
     "If you work with the browser extension, these buttons will cause no effect, since the viewer takes the whole page by default.":
-        "Om du använder tillägget i browsern kommer dessa knappar inte att fungera då visningsprogrammet hanterar hela sidan som standard.",
+        "Si trabaja con la extensión del navegador, estos botones no causarán ningún efecto, ya que el visor toma toda la página por defecto.",
 
     // Toolbar tooltips
     "Continuous scroll view mode":
-        "Visningsläge med kontinuerlig scrolling",
+        "Modo de scroll continuo",
     "Single page view mode":
-        "Visningsläge med en sida",
+        "Modo de vista de una sola página",
     "Text view mode":
-        "Visningsläge med text",
+        "Modo de vista de texto",
     "Click on the number to enter it manually":
-        "Du kan klicka på sidnumret för att ange det manuellt",
+        "Haga clic en el número para introducirlo manualmente",
     "Rotate the page":
-        "Rotera sidan",
+        "Rotar página",
     "You also can scale the page via Ctrl+MouseWheel":
-        "Du kan också skala sidan genom att använda Ctrl + Skrollknappen på musen",
+        "También puede escalar la página mediante Ctrl+Rueda del ratón",
     "Text cursor mode":
-        "Visningsläge med textmarkör",
+        "Modo cursor de texto",
     "Grab cursor mode":
-        "Visningsläge med greppbart markörläge",
+        "Modo cursor de agarre",
 
     // Contents
     "Contents":
-        "Innehåll",
+        "Contenido",
     "No contents provided":
-        "Inget innehåll har givits",
+        "No se proporciona ningún contenido",
     // A rare case. Open /library/assets/links.djvu in the viewer on https://djvu.js.org/ (not in the extension!)
     // and click the "Absolute Link" in the contents
     "The link points to another document. Do you want to proceed?":
-        "Länken vidarebefodrar till ett annat dokument. Vill du fortsätta?",
+        "El enlace apunta a otro documento. ¿Desea continuar?",
 
     // Text Block (shown in the text view mode)
     "No text on this page":
-        "Ingen text finns på denna sida",
+        "No hay texto en esta página",
 
     // Save dialog (shows when you save an indirect djvu)
     "You are trying to save an indirect (multi-file) document.":
-        "Du försöker spara ett indirekt dokument (flera filer).",
+        "Está intentando guardar un documento indirecto (de varios archivos)",
     "What exactly do you want to do?":
-        "Vad vill du göra?",
+        "¿Qué quiere hacer exactamente?",
     "Save only index file":
-        "Spara endast index-fil",
+        "Guardar sólo el archivo de índice",
     "Download, bundle and save the whole document as one file":
-        "Ladda ner, packa ihop och spara hela dokumentet som en fil",
+        "Descargue, agrupe y guarde todo el documento como un solo archivo",
     "Downloading and bundling the document":
-        "Laddar ner och packer ihop dokumentet",
+        "Descargando y agrupando el documento",
     "The document has been downloaded and bundled into one file successfully":
-        "Dokumentet har laddats ner och packats ihop till en fil",
+        "El documento ha sido descargado y agrupado en un archivo con éxito",
 
     // Printing
     "Print document":
-        "Skriv ut",
+        "Imprimir documento",
     "Pages must be rendered before printing.":
-        "Sidorna måste renderas före utskrift.",
+        "Las páginas deben ser renderizadas antes de la impresión.",
     "It may take a while.":
-        "Det kan ta en stund.",
+        "Puede llevar un tiempo.",
     "Select the pages you want to print.":
-        "Välj de sidor du vill skriva ut.",
+        "Seleccione las páginas que desea imprimir.",
     "From":
-        "Från",
+        "Desde",
     "to":
-        "till",
+        "hasta",
     "Prepare pages for printing":
-        "Förbered sidor för utskrift",
+        "Preparar las páginas para la impresión",
     "Preparing pages for printing":
-        "Förbereder sidor för utskrift",
+        "Preparando páginas para imprimir",
 };
